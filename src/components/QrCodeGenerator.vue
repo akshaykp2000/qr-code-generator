@@ -84,6 +84,8 @@ export default {
     }
   },
   methods:{
+
+    // Function For Creating the qr code
     generateQrCode(){
       const self = this;
       if(self.qrvalue) {
@@ -95,6 +97,8 @@ export default {
         },500);
       }
     },
+
+    // Print Qr code Function
     printQrCode(){
       var prtContent = document.getElementById("qrCodeGenerator");
       var WinPrint = window.open(
@@ -111,6 +115,8 @@ export default {
           // WinPrint.close();
       }, 2000);
     },
+
+    // This Function For Open Qr code Slider
     qrCodeSlider(){
       const self = this;
       self.generateQrCodeFlag = false;
